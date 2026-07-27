@@ -10,7 +10,7 @@
 @keyframes ffMarquee{ from { transform:translateX(0); }               to { transform:translateX(-50%); } }
 
 /* Baseline: visible. Inline opacity:0 in the markup is only a start state. */
-[data-anim] { opacity:1 !important; }
+[data-anim] { opacity:1; }
 [data-anim="words"] .wm { display:inline-block; overflow:hidden; vertical-align:bottom; padding-bottom:.14em; margin-bottom:-.14em; }
 [data-anim="words"] .w  { display:inline-block; will-change:transform; }
 
