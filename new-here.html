@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Here — Fitness Farm Charlevoix | Your First Class, Free</title>
+<meta name="description" content="What your first functional fitness class at Fitness Farm Charlevoix looks like, start to finish. What to wear, where to park, how everything scales. First class free." />
+<link rel="icon" href="images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 130px; }
+  body { margin: 0; background: #FBFAF8; color: #1D1D1E; font-family: 'Source Sans 3', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+  img { max-width: 100%; }
+  a { color: #039B4D; }
+  a:hover { color: #04BD5F; }
+  ::selection { background: #04BD5F; color: #062713; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] .ff-plus { transform: rotate(45deg); }
+  .ff-plus { transition: transform .3s ease; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Fitness Farm Charlevoix",
+  "description": "Functional fitness gym offering coach led group workouts and private training for all levels in Charlevoix, Michigan.",
+  "image": "images/barn-door-field.jpg",
+  "logo": "images/logo.png",
+  "telephone": "+1-231-675-9188",
+  "email": "fitnessfarmcharlevoix.org@gmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4903 Marion Center Rd",
+    "addressLocality": "Charlevoix",
+    "addressRegion": "MI",
+    "postalCode": "49720",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.277125, "longitude": -85.2727005 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "14" },
+  "sameAs": [
+    "https://www.facebook.com/fitnessfarmcharlevoix/",
+    "https://www.instagram.com/fitnessfarmchx/"
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday"], "opens": "06:00", "closes": "07:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "17:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "06:00", "closes": "07:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "16:30", "closes": "17:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "10:00" }
+  ]
+}
+</script>
+<link rel="stylesheet" href="site.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="motion.js" defer></script>
+<script src="site.js" defer></script>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:900;font-family:'Source Sans 3',system-ui,sans-serif">
+  <div style="background:#1D1D1E;color:#A9ADB3;height:34px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(14px,4vw,48px);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;overflow:hidden;white-space:nowrap">
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Fitness%20Farm%20Charlevoix&amp;query_place_id=ChIJkeMee1btSk0RzZCQS1hPnpE" target="_blank" rel="noopener" style="color:#E8E6E1;text-decoration:none;display:flex;align-items:center;gap:8px;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis" data-h="1">
+      <span style="color:#C39A63;letter-spacing:0.02em">★★★★★</span>
+      <span>5.0 on Google</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:clamp(12px,2.5vw,26px);flex:0 0 auto">
+      <a href="contact.html#directions" style="color:#A9ADB3;text-decoration:none" data-h="1">Directions</a>
+      <a href="sms:+12316759188?&amp;body=Hi%20Fitness%20Farm%20-%20I%27d%20like%20to%20try%20a%20class." style="color:#04BD5F;text-decoration:none;display:flex;align-items:center;gap:7px" data-h="2">
+        <span style="width:6px;height:6px;border-radius:50%;background:#04BD5F;display:inline-block"></span>
+        <span>Text us</span>
+      </a>
+    </div>
+  </div>
+
+  <header data-ff-bar="1" style="height:70px;background:rgba(251,250,248,0.93);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid rgba(29,29,30,0.09);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 clamp(14px,4vw,48px);transition:box-shadow .35s ease,background .35s ease">
+    <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#000000;flex:0 0 auto">
+      <img src="images/logo.png" alt="Fitness Farm Charlevoix badge logo" width="44" height="44" style="width:44px;height:44px;display:block" />
+      <span style="display:flex;flex-direction:column;gap:2px;line-height:1">
+        <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:15.5px;letter-spacing:0.15em;text-transform:uppercase">Fitness Farm</span>
+        <span style="font-family:'Oswald',sans-serif;font-weight:400;font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:#8A7C64">Charlevoix, Michigan</span>
+      </span>
+    </a>
+
+    <nav data-ff-nav="desktop" style="display:flex;align-items:center;gap:clamp(16px,2.2vw,30px)">
+      <a data-nav="home" href="index.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#1D1D1E;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent" data-h="3">Home</a>
+      <a data-nav="classes" href="classes.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#1D1D1E;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent" data-h="3">Classes</a>
+      <a data-nav="schedule" href="schedule.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#1D1D1E;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent" data-h="3">Schedule</a>
+      <a data-nav="new" data-active="1" href="new-here.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#1D1D1E;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent" data-h="3">New Here</a>
+      <a data-nav="about" href="about.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#1D1D1E;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent" data-h="3">About</a>
+      <a data-nav="contact" href="contact.html" style="font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:#062713;background:#04BD5F;text-decoration:none;padding:12px 20px;border-radius:2px;white-space:nowrap" data-h="4">Contact</a>
+    </nav>
+
+    <button type="button" data-ff-burger="1" onclick="ffMenu()" aria-label="Open menu" style="display:none;align-items:center;gap:9px;background:none;border:1px solid rgba(29,29,30,0.18);border-radius:2px;padding:9px 13px;cursor:pointer;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1D1D1E">
+      <span style="display:flex;flex-direction:column;gap:3.5px">
+        <span style="display:block;width:16px;height:1.5px;background:#1D1D1E"></span>
+        <span style="display:block;width:16px;height:1.5px;background:#1D1D1E"></span>
+        <span style="display:block;width:16px;height:1.5px;background:#1D1D1E"></span>
+      </span>
+      <span>Menu</span>
+    </button>
+  </header>
+</div>
+
+<div data-ff-spacer="1" style="height:104px"></div>
+
+<div id="ffMenu" style="position:fixed;inset:0;z-index:950;background:#1D1D1E;overflow-y:auto;font-family:'Source Sans 3',system-ui,sans-serif;transition:opacity .32s ease, transform .32s cubic-bezier(.2,.8,.2,1);opacity:0;transform:translateY(-14px);pointer-events:none">
+  <div style="display:flex;align-items:center;justify-content:space-between;height:104px;padding:0 clamp(14px,4vw,48px);border-bottom:1px solid rgba(255,255,255,0.12)">
+    <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.18em;text-transform:uppercase;color:#FFFFFF">Fitness Farm</span>
+    <button type="button" onclick="ffMenu()" aria-label="Close menu" style="background:none;border:1px solid rgba(255,255,255,0.25);border-radius:2px;padding:10px 14px;cursor:pointer;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF">Close</button>
+  </div>
+  <nav style="display:flex;flex-direction:column;padding:8px clamp(14px,4vw,48px) 0">
+    <a href="index.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">Home</a>
+    <a href="classes.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">Classes</a>
+    <a href="schedule.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">Schedule &amp; Pricing</a>
+    <a href="new-here.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">New Here</a>
+    <a href="about.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">About</a>
+    <a href="contact.html" onclick="ffMenu(false)" style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1)">Contact</a>
+    <a href="contact.html" onclick="ffMenu(false)" style="margin-top:28px;text-align:center;font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#062713;background:#04BD5F;text-decoration:none;padding:19px 24px;border-radius:2px">Contact us</a>
+  </nav>
+</div>
+
+<div data-ff-mobilebar="1" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:880;background:#1D1D1E;border-top:1px solid rgba(255,255,255,0.12);grid-template-columns:1fr 1fr 1.2fr;font-family:'Oswald',sans-serif">
+  <a href="sms:+12316759188?&amp;body=Hi%20Fitness%20Farm%20-%20I%27d%20like%20to%20try%20a%20class." style="display:flex;align-items:center;justify-content:center;min-height:56px;color:#FFFFFF;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,0.12)">Text</a>
+  <a href="tel:+12316759188" style="display:flex;align-items:center;justify-content:center;min-height:56px;color:#FFFFFF;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,0.12)">Call</a>
+  <a href="contact.html" style="display:flex;align-items:center;justify-content:center;min-height:56px;background:#04BD5F;color:#062713;text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Contact</a>
+</div>
+
+
+
+<section data-screen-label="New here intro" style="position:relative;overflow:hidden;background:#0F0F10;padding:clamp(52px,6.5vw,104px) clamp(18px,5vw,64px)">
+  <img src="images/pullups-wall.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:0.28" />
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,16,0.74),rgba(15,15,16,0.95))"></div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(26px,4vw,64px);align-items:end">
+    <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+      <p data-anim="fade" data-now="1" style="opacity:0;margin:0;display:flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:#C39A63">
+        <span style="width:34px;height:1px;background:#C39A63;display:inline-block"></span>New here
+      </p>
+      <h1 data-anim="words" data-now="1" data-delay="0.1" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(34px,6vw,82px);line-height:0.92;text-transform:uppercase;color:#FFFFFF">Your first class, start to finish</h1>
+    </div>
+    <p data-anim="fade" data-now="1" data-delay="0.35" style="opacity:0;margin:0;font-size:clamp(16.5px,1.4vw,19px);line-height:1.7;color:#C6C3BD;max-width:50ch">Nobody's first class is pretty. Ours included. Here is exactly what happens, in order, so there are no surprises when you pull into the drive.</p>
+  </div>
+</section>
+
+<section data-screen-label="Walkthrough" style="padding:clamp(56px,7vw,116px) clamp(18px,5vw,64px);background:#FBFAF8">
+  <div style="max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:0">
+    <div data-anim="stagger" style="opacity:0;display:flex;flex-direction:column;gap:0">
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">01</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Text us, or book below</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">Tell us roughly when you want to come and anything we should know. You will hear back from Leslie, usually within the hour. No sales call, no tour required.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">02</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Arrive ten minutes early</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">Gravel drive off Marion Center Road, barn set back from the road. Park on the grass, anywhere. Walk in the side door. Someone will say hello before you have your shoes changed.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">03</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Meet your coach</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">Tell them what hurts, what you have done before, and what you are hoping for. That two minute conversation is what makes the next hour work.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">04</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Whiteboard, then warm up</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">The coach walks the whole class through the day's plan on the board, then everyone warms up together. You will know what is coming before you touch anything heavy.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">05</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">We teach every movement</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">Nothing gets loaded until it looks right. If a movement is not for you today, we swap it. That is not a lesser version of the workout, it is the workout.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#C39A63">06</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">The workout, scaled to you</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">You will breathe hard. You will also stop when you need to, and nobody will notice or care. Everyone in the room is busy with their own version of the same thing.</p>
+        </div>
+      </article>
+      <article style="display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,40px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid rgba(29,29,30,0.14);border-bottom:1px solid rgba(29,29,30,0.14)">
+        <span style="font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:0.9;color:#04BD5F">07</span>
+        <div>
+          <h3 style="margin:0 0 9px;font-family:'Oswald',sans-serif;font-size:clamp(19px,2.2vw,26px);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Wipe down, high fives, done</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#46443F;max-width:60ch">Put your kit back, wipe your bar, hang around as long as you like. Most people do. That is the part that keeps them coming back.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="What to bring" style="padding:clamp(52px,6.5vw,100px) clamp(18px,5vw,64px);background:#F2E9DC">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,60px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B">What to bring</h2>
+      <p data-anim="fade" style="opacity:0;margin:0;font-size:17.5px;line-height:1.68;color:#46443F;max-width:46ch">Athletic shoes, water, and a towel in summer when the door is open and the barn gets warm. That is the whole list. Leave the gym clothes shopping for later.</p>
+      <p data-anim="fade" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8A7C64">Restroom on site · free parking on the grass</p>
+    </div>
+    <div data-anim="stagger" style="opacity:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(29,29,30,0.14);border:1px solid rgba(29,29,30,0.14)">
+      <div style="background:#FBFAF8;padding:24px 20px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C39A63">01</span><span style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Shoes</span></div>
+      <div style="background:#FBFAF8;padding:24px 20px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C39A63">02</span><span style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Water</span></div>
+      <div style="background:#FBFAF8;padding:24px 20px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C39A63">03</span><span style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Towel</span></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="FAQ" style="padding:clamp(56px,7vw,110px) clamp(18px,5vw,64px);background:#FBFAF8">
+  <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,38px)">
+    <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B">The questions everyone asks</h2>
+    <div data-anim="stagger" style="opacity:0;display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(29,29,30,0.14)">
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Do I need to be fit already?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">No. That is the entire pitch. Every workout is scaled to the person doing it, which is why the room holds first timers and people who have trained for a decade at the same time.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Is this CrossFit?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">It is functional fitness, coached the way most people mean when they say CrossFit: barbells, gymnastics, rowing, running, all mixed and all scaled. If you have trained at a box before, you will recognise the hour immediately.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">What if I have never lifted a barbell?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">Then you will learn with an empty bar or a dowel, and you will keep it there until it looks good. Sweat 30 is also barbell free if you would rather start there.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Is there a contract?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">No lock in. Memberships run month to month and you can change tier or pause when life happens. Text Leslie and it is handled.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Can I bring my kid?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">Families train here. There is a stroller in the corner of one of our own photos. Tell us in advance so we can set the room up sensibly, and in summer there are kids classes of their own.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Where exactly is it?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
+        <p style="margin:0;padding:0 0 24px;font-size:17px;line-height:1.68;color:#46443F;max-width:62ch">4903 Marion Center Road, about ten minutes from downtown Charlevoix. Look for the gravel drive and the barn behind the trees. <a href="contact.html#directions" style="color:#039B4D">Directions and a map are here.</a></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="free-class" data-screen-label="Free class form" style="padding:clamp(56px,7vw,116px) clamp(18px,5vw,64px);background:#151516">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(30px,4.5vw,72px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+      <p data-anim="fade" style="opacity:0;margin:0;display:flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:#C39A63">
+        <span style="width:34px;height:1px;background:#C39A63;display:inline-block"></span>No card, no commitment
+      </p>
+      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4.2vw,58px);line-height:0.96;text-transform:uppercase;color:#FFFFFF">Claim your free class</h2>
+      <p data-anim="fade" style="opacity:0;margin:0;font-size:17.5px;line-height:1.7;color:#C6C3BD;max-width:48ch">Fill this in and Leslie will text you back with a time. If you would rather skip the form, text the gym directly. Either works, and both reach the same person.</p>
+      <a data-anim="fade" href="sms:+12316759188?&amp;body=Hi%20Fitness%20Farm%20-%20I%27d%20like%20to%20claim%20my%20free%20class." style="opacity:0;align-self:flex-start;font-family:'Oswald',sans-serif;font-size:19px;font-weight:500;letter-spacing:0.06em;color:#FFFFFF;text-decoration:none;border-bottom:2px solid #04BD5F;padding-bottom:8px" data-h="15">Text (231) 675-9188</a>
+      <p data-anim="fade" style="opacity:0;margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.6;color:#8F949A">demo form · connect to email or booking software at build</p>
+    </div>
+
+    <div data-anim="fade" style="opacity:0;background:#1D1D1E;border:1px solid rgba(255,255,255,0.14);padding:clamp(24px,3vw,40px)">
+      <div class="ff-sent" style="display:none">
+        <div style="display:flex;flex-direction:column;gap:14px;padding:clamp(16px,2vw,28px) 0">
+          <span style="font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#04BD5F">Got it</span>
+          <h3 style="margin:0;font-family:'Oswald',sans-serif;font-size:clamp(22px,2.6vw,32px);font-weight:600;letter-spacing:0.03em;text-transform:uppercase;color:#FFFFFF">See you at the barn</h3>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#C6C3BD">Leslie will text you back with a time that works. Bring shoes and water. Everything else we have.</p>
+        </div>
+      </div>
+      <div class="ff-form">
+        <form onsubmit="return ffForm(this)" style="display:flex;flex-direction:column;gap:18px">
+          <label style="display:flex;flex-direction:column;gap:8px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8F949A">Name
+            <input type="text" required="required" placeholder="First and last" style="font-family:'Source Sans 3',sans-serif;font-size:16px;letter-spacing:0;text-transform:none;padding:15px 16px;background:#151516;border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;border-radius:2px" />
+          </label>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px">
+            <label style="display:flex;flex-direction:column;gap:8px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8F949A">Mobile
+              <input type="tel" required="required" placeholder="(231) 000-0000" style="font-family:'Source Sans 3',sans-serif;font-size:16px;letter-spacing:0;text-transform:none;padding:15px 16px;background:#151516;border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;border-radius:2px" />
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8F949A">Email
+              <input type="email" placeholder="you@email.com" style="font-family:'Source Sans 3',sans-serif;font-size:16px;letter-spacing:0;text-transform:none;padding:15px 16px;background:#151516;border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;border-radius:2px" />
+            </label>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:8px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8F949A">Which class suits you
+            <select style="font-family:'Source Sans 3',sans-serif;font-size:16px;letter-spacing:0;text-transform:none;padding:15px 16px;background:#151516;border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;border-radius:2px">
+              <option>6:00 AM group class</option>
+              <option>Evening group class</option>
+              <option>Sweat 30</option>
+              <option>Saturday partner WOD</option>
+              <option>Vitality 55+</option>
+              <option>Private session</option>
+              <option>Not sure, tell me what fits</option>
+            </select>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8F949A">What are you after
+            <textarea rows="3" placeholder="Get stronger, move better, anything we should know about injuries." style="font-family:'Source Sans 3',sans-serif;font-size:16px;letter-spacing:0;text-transform:none;padding:15px 16px;background:#151516;border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;border-radius:2px;resize:vertical"></textarea>
+          </label>
+          <button type="submit" style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#062713;background:#04BD5F;border:none;padding:19px 26px;border-radius:2px;cursor:pointer" data-h="9">Book my free class</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer style="background:#1D1D1E;color:#B9BCC1;font-family:'Source Sans 3',system-ui,sans-serif;padding:clamp(56px,7vw,96px) clamp(18px,5vw,64px) 0">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+      <img src="images/logo.png" alt="Fitness Farm Charlevoix badge logo" width="70" height="70" style="width:70px;height:70px;display:block;filter:invert(1)" />
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#D6D3CE;max-width:30ch">Functional fitness in a barn on the edge of Charlevoix. Group classes, private training, every workout scaled to the person doing it.</p>
+      <p style="margin:0;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:#C39A63">Every.Body.Can.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a href="https://www.instagram.com/fitnessfarmchx/" target="_blank" rel="noopener" style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#E8E6E1;text-decoration:none;border:1px solid rgba(255,255,255,0.2);padding:9px 13px;border-radius:2px" data-h="14">Instagram</a>
+        <a href="https://www.facebook.com/fitnessfarmcharlevoix/" target="_blank" rel="noopener" style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#E8E6E1;text-decoration:none;border:1px solid rgba(255,255,255,0.2);padding:9px 13px;border-radius:2px" data-h="14">Facebook</a>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+      <h3 style="margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#FFFFFF">Visit</h3>
+      <div style="width:34px;height:2px;background:#C39A63"></div>
+      <p style="margin:0;font-size:16px;line-height:1.65;color:#D6D3CE">4903 Marion Center Rd<br />Charlevoix, MI 49720</p>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#9BA0A6">Ten minutes from downtown. Gravel drive, barn set back from the road.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Fitness%20Farm%20Charlevoix&amp;query_place_id=ChIJkeMee1btSk0RzZCQS1hPnpE" target="_blank" rel="noopener" style="font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#04BD5F;text-decoration:none;border-bottom:1px solid rgba(4,189,95,0.4);padding-bottom:3px;align-self:flex-start" data-h="2">Get directions</a>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+      <h3 style="margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#FFFFFF">Hours</h3>
+      <div style="width:34px;height:2px;background:#C39A63"></div>
+      <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:7px 16px;font-size:15px;line-height:1.4">
+        <dt style="color:#9BA0A6">Mon</dt><dd style="margin:0;color:#D6D3CE">6:00–7:30 AM · 5:00–7:00 PM</dd>
+        <dt style="color:#9BA0A6">Tue</dt><dd style="margin:0;color:#D6D3CE">5:00–7:00 PM</dd>
+        <dt style="color:#9BA0A6">Wed</dt><dd style="margin:0;color:#D6D3CE">6:00–7:30 AM · 5:00–7:00 PM</dd>
+        <dt style="color:#9BA0A6">Thu</dt><dd style="margin:0;color:#D6D3CE">5:00–7:00 PM</dd>
+        <dt style="color:#9BA0A6">Fri</dt><dd style="margin:0;color:#D6D3CE">6:00–7:30 AM · 4:30–5:30 PM</dd>
+        <dt style="color:#9BA0A6">Sat</dt><dd style="margin:0;color:#D6D3CE">9:00–10:00 AM partner WOD</dd>
+        <dt style="color:#9BA0A6">Sun</dt><dd style="margin:0;color:#9BA0A6">Closed</dd>
+      </dl>
+      <p style="margin:0;font-size:14px;line-height:1.55;color:#8F949A">Times shift with the seasons. Summer adds classes.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+      <h3 style="margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#FFFFFF">Site</h3>
+      <div style="width:34px;height:2px;background:#C39A63"></div>
+      <nav style="display:flex;flex-direction:column;gap:11px">
+        <a href="index.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">Home</a>
+        <a href="classes.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">Classes &amp; programs</a>
+        <a href="schedule.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">Schedule &amp; pricing</a>
+        <a href="new-here.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">New here</a>
+        <a href="schedule.html#dropin" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">Drop in rates</a>
+        <a href="about.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">About &amp; coaches</a>
+        <a href="contact.html" style="font-size:16px;color:#D6D3CE;text-decoration:none" data-h="1">Contact</a>
+      </nav>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+      <h3 style="margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#FFFFFF">Start here</h3>
+      <div style="width:34px;height:2px;background:#C39A63"></div>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#9BA0A6">Texting is the fastest way to reach us. First class is free.</p>
+      <a href="sms:+12316759188?&amp;body=Hi%20Fitness%20Farm%20-%20I%27d%20like%20to%20try%20a%20class." style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:0.06em;color:#FFFFFF;text-decoration:none" data-h="15">(231) 675-9188<span style="display:block;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#8F949A;margin-top:4px">Leslie · text or call</span></a>
+      <a href="tel:+17735589162" style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:0.06em;color:#FFFFFF;text-decoration:none" data-h="15">(773) 558-9162<span style="display:block;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#8F949A;margin-top:4px">Aaron · call</span></a>
+      <a href="mailto:fitnessfarmcharlevoix.org@gmail.com" style="font-size:15px;color:#D6D3CE;text-decoration:none;word-break:break-word" data-h="1">fitnessfarmcharlevoix.org@gmail.com</a>
+      <a href="new-here.html#free-class" style="margin-top:4px;text-align:center;font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#062713;background:#04BD5F;text-decoration:none;padding:15px 18px;border-radius:2px" data-h="4">Claim your free class</a>
+    </div>
+  </div>
+
+  <div style="max-width:1240px;margin:clamp(44px,5vw,72px) auto 0;border-top:1px solid rgba(255,255,255,0.12);padding:24px 0 clamp(28px,6vw,90px);display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;font-size:13.5px;color:#7F858B">
+    <p style="margin:0">© 2026 Fitness Farm Charlevoix, LLC · Est. 2023</p>
+    <div style="display:flex;flex-wrap:wrap;gap:20px">
+      <a href="contact.html" style="color:#7F858B;text-decoration:none" data-h="1">Contact</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Fitness%20Farm%20Charlevoix&amp;query_place_id=ChIJkeMee1btSk0RzZCQS1hPnpE" target="_blank" rel="noopener" style="color:#7F858B;text-decoration:none" data-h="1">Google profile</a>
+      <span>Wheelchair accessible entrance, restroom &amp; parking</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
