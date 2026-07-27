@@ -1,0 +1,22 @@
+/* Fitness Farm Charlevoix - hover + state styles (generated) */
+[data-h="1"]:hover{color:#FFFFFF !important;}
+[data-h="2"]:hover{color:#3BD683 !important;}
+[data-h="3"]:hover{border-bottom-color:#C39A63 !important;}
+[data-h="4"]:hover{background:#039B4D !important;color:#FFFFFF !important;}
+[data-h="5"]:hover{background:#FFFFFF !important;color:#062713 !important;}
+[data-h="6"]:hover{background:rgba(255,255,255,0.12) !important;border-color:#FFFFFF !important;}
+[data-h="7"]:hover{color:#039B4D !important;}
+[data-h="8"]:hover{border-bottom-color:#04BD5F !important;}
+[data-h="9"]:hover{background:#FFFFFF !important;}
+[data-h="10"]:hover{color:#04BD5F !important;border-bottom-color:#04BD5F !important;}
+[data-h="11"]:hover{color:#FFFFFF !important;border-bottom-color:#FFFFFF !important;}
+[data-h="12"]:hover{background:#1D1D1E !important;}
+[data-h="13"]:hover{background:rgba(255,255,255,0.28) !important;border-color:#052A16 !important;}
+[data-h="14"]:hover{border-color:#C39A63 !important;color:#FFFFFF !important;}
+[data-h="15"]:hover{color:#04BD5F !important;}
+[data-h="16"]:hover{color:#0A0A0B !important;border-bottom-color:#C39A63 !important;}
+[data-h="17"]:hover{border-color:#0A0A0B !important;}
+
+[data-nav][data-active]{border-bottom-color:#C39A63 !important;color:#000000 !important;}
+a[data-nav="contact"][data-active]{background:#039B4D !important;color:#FFFFFF !important;border-bottom-color:transparent !important;}
+nav::-webkit-scrollbar{display:none;}
