@@ -22,8 +22,6 @@
   details[open] .ff-plus { transform: rotate(45deg); }
   .ff-plus { transition: transform .3s ease; }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,9 +57,6 @@
 }
 </script>
 <link rel="stylesheet" href="site.css">
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="motion.js" defer></script>
 <script src="site.js" defer></script>
 </head>
 <body>
@@ -143,7 +138,7 @@
       <p data-anim="fade" data-now="1" style="opacity:0;margin:0;display:flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:#C39A63">
         <span style="width:34px;height:1px;background:#C39A63;display:inline-block"></span>New here
       </p>
-      <h1 data-anim="words" data-now="1" data-delay="0.1" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(34px,6vw,82px);line-height:0.92;text-transform:uppercase;color:#FFFFFF">Your first class, start to finish</h1>
+      <h1 data-anim="words" data-now="1" data-delay="0.1" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(34px,6vw,82px);line-height:0.92;text-transform:uppercase;color:#FFFFFF"><span class="wm"><span class="w">Your</span></span> <span class="wm"><span class="w">first</span></span> <span class="wm"><span class="w">class,</span></span> <span class="wm"><span class="w">start</span></span> <span class="wm"><span class="w">to</span></span> <span class="wm"><span class="w">finish</span></span></h1>
     </div>
     <p data-anim="fade" data-now="1" data-delay="0.35" style="opacity:0;margin:0;font-size:clamp(16.5px,1.4vw,19px);line-height:1.7;color:#C6C3BD;max-width:50ch">Nobody's first class is pretty. Ours included. Here is exactly what happens, in order, so there are no surprises when you pull into the drive.</p>
   </div>
@@ -208,7 +203,7 @@
 <section data-screen-label="What to bring" style="padding:clamp(52px,6.5vw,100px) clamp(18px,5vw,64px);background:#F2E9DC">
   <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,60px);align-items:center">
     <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
-      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B">What to bring</h2>
+      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B"><span class="wm"><span class="w">What</span></span> <span class="wm"><span class="w">to</span></span> <span class="wm"><span class="w">bring</span></span></h2>
       <p data-anim="fade" style="opacity:0;margin:0;font-size:17.5px;line-height:1.68;color:#46443F;max-width:46ch">Athletic shoes, water, and a towel in summer when the door is open and the barn gets warm. That is the whole list. Leave the gym clothes shopping for later.</p>
       <p data-anim="fade" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8A7C64">Restroom on site · free parking on the grass</p>
     </div>
@@ -222,7 +217,7 @@
 
 <section data-screen-label="FAQ" style="padding:clamp(56px,7vw,110px) clamp(18px,5vw,64px);background:#FBFAF8">
   <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,38px)">
-    <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B">The questions everyone asks</h2>
+    <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1;text-transform:uppercase;color:#0A0A0B"><span class="wm"><span class="w">The</span></span> <span class="wm"><span class="w">questions</span></span> <span class="wm"><span class="w">everyone</span></span> <span class="wm"><span class="w">asks</span></span></h2>
     <div data-anim="stagger" style="opacity:0;display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(29,29,30,0.14)">
       <details style="border-bottom:1px solid rgba(29,29,30,0.14)">
         <summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:22px 0;font-family:'Oswald',sans-serif;font-size:clamp(16px,1.8vw,20px);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0B">Do I need to be fit already?<span class="ff-plus" style="flex:0 0 auto;font-size:22px;color:#04BD5F;line-height:1">+</span></summary>
@@ -258,7 +253,7 @@
       <p data-anim="fade" style="opacity:0;margin:0;display:flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:#C39A63">
         <span style="width:34px;height:1px;background:#C39A63;display:inline-block"></span>No card, no commitment
       </p>
-      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4.2vw,58px);line-height:0.96;text-transform:uppercase;color:#FFFFFF">Claim your free class</h2>
+      <h2 data-anim="words" style="opacity:0;margin:0;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4.2vw,58px);line-height:0.96;text-transform:uppercase;color:#FFFFFF"><span class="wm"><span class="w">Claim</span></span> <span class="wm"><span class="w">your</span></span> <span class="wm"><span class="w">free</span></span> <span class="wm"><span class="w">class</span></span></h2>
       <p data-anim="fade" style="opacity:0;margin:0;font-size:17.5px;line-height:1.7;color:#C6C3BD;max-width:48ch">Fill this in and Leslie will text you back with a time. If you would rather skip the form, text the gym directly. Either works, and both reach the same person.</p>
       <a data-anim="fade" href="sms:+12316759188?&amp;body=Hi%20Fitness%20Farm%20-%20I%27d%20like%20to%20claim%20my%20free%20class." style="opacity:0;align-self:flex-start;font-family:'Oswald',sans-serif;font-size:19px;font-weight:500;letter-spacing:0.06em;color:#FFFFFF;text-decoration:none;border-bottom:2px solid #04BD5F;padding-bottom:8px" data-h="15">Text (231) 675-9188</a>
       <p data-anim="fade" style="opacity:0;margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.6;color:#8F949A">demo form · connect to email or booking software at build</p>
