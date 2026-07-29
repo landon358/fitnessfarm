@@ -114,3 +114,27 @@ nav::-webkit-scrollbar{display:none;}
   [data-anim="img"]:not([data-now]) { clip-path:none !important; }
   section img { animation:none !important; }
 }
+
+
+/* ---- responsive: header / footer ---- */
+#ffMenu { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-14px); }
+#ffMenu[data-open="open"] { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+[data-ff-burger] { display: none; }
+[data-ff-mobilebar] { display: none; }
+@media (max-width: 939px) {
+  [data-ff-nav="desktop"] { display: none; }
+  [data-ff-burger] { display: flex; }
+  [data-ff-mobilebar] { display: grid; }
+  [data-ff-footer-grid] { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+}
+@media (min-width: 940px) {
+  #ffMenu { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+}
+@media (max-width: 600px) {
+  [data-ff-util] { height: 30px; font-size: 10px; }
+  [data-ff-bar] { height: 62px; }
+  [data-ff-spacer] { height: 92px; }
+  [data-ff-wordmark] { display: none; }
+  [data-ff-footer-grid] { grid-template-columns: 1fr; }
+  [data-ff-footer-bottom] { flex-direction: column; align-items: flex-start; padding-bottom: 96px; }
+}
