@@ -2,12 +2,12 @@
 function ffMenu(open){
   var m = document.getElementById('ffMenu');
   if(!m) return;
-  var show = (open === undefined) ? m.style.opacity !== '1' : !!open;
-  m.style.opacity = show ? '1' : '0';
-  m.style.visibility = show ? 'visible' : 'hidden';
-  m.style.transform = show ? 'translateY(0)' : 'translateY(-14px)';
-  m.style.pointerEvents = show ? 'auto' : 'none';
+  var show = (open === undefined) ? m.getAttribute('data-open') !== 'open' : !!open;
+  m.setAttribute('data-open', show ? 'open' : 'closed');
+  document.body.style.overflow = show ? 'hidden' : '';
 }
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape') ffMenu(false); });
+window.addEventListener('resize', function(){ if(window.innerWidth >= 940) ffMenu(false); });
 function ffForm(f){
   var wrap = f.closest('.ff-form');
   if(wrap){ var done = wrap.parentElement.querySelector('.ff-sent');
@@ -21,13 +21,6 @@ function ffSub(f){
 }
 (function(){
   function apply(){
-    var mobile = window.innerWidth < 940;
-    var nav = document.querySelector('[data-ff-nav]');
-    var burger = document.querySelector('[data-ff-burger]');
-    var bar = document.querySelector('[data-ff-mobilebar]');
-    if(nav) nav.style.display = mobile ? 'none' : 'flex';
-    if(burger) burger.style.display = mobile ? 'flex' : 'none';
-    if(bar) bar.style.display = mobile ? 'grid' : 'none';
   }
   function shade(){
     var h = document.querySelector('[data-ff-bar]');
